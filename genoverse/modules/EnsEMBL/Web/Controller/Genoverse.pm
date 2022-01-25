@@ -189,6 +189,14 @@ sub fetch_gencode {
   return shift->fetch_transcript(@_);
 }
 
+sub fetch_mane_select {
+  return shift->fetch_transcript(@_);
+}
+
+sub fetch_mane_plus_clinical {
+  return shift->fetch_transcript(@_);
+}
+
 sub fetch_transcript {
   my ($self, $slice, $image_config, $function, $node) = @_;
   my $hub       = $self->hub;
